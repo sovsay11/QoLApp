@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QoLApp.Views.ConversionPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Unit Conversion"
+                   FontSize="30"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Grid.ColumnSpan="2"
+                   BackgroundColor="SkyBlue"/>
+            <Label Text="Type:"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   FontSize="30"
+                   TextColor="Black"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="Center"/>
+            <Picker x:Name="PckrType"
+                    Grid.Row="1"
+                    FontSize="30"
+                    Grid.Column="1"
+                    SelectedIndexChanged="PckrType_SelectedIndexChanged"/>
+            <Entry x:Name="EntUnits"
+                   Placeholder="Enter units"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric"
+                   TextChanged="EntUnits_TextChanged"/>
+            <Picker x:Name="PckrUnits"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    FontSize="20"
+                    SelectedIndexChanged="PckrUnits_SelectedIndexChanged"/>
+            <Label Text="is equivalent to..."
+                   Grid.Row="3"
+                   Grid.ColumnSpan="2"
+                   FontSize="30"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+            <Entry x:Name="EntConvertedUnits"
+                   Placeholder="Converted units"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric"/>
+            <Picker x:Name="PckrConvertedUnits"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    FontSize="20"
+                    SelectedIndexChanged="PckrConvertedUnits_SelectedIndexChanged"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
