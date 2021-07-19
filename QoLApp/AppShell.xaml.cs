@@ -11,6 +11,7 @@ namespace QoLApp
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(KhmerPage), typeof(KhmerPage));
             Routing.RegisterRoute(nameof(ConversionPage), typeof(ConversionPage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));

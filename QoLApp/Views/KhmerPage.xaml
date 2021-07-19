@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QoLApp.Views.KhmerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="ImgTemplate"
+                   Aspect="AspectFit"
+                   />
+            <Button x:Name="BtnFlip"
+                    Text="Flip Page"
+                    FontSize="30"
+                    BackgroundColor="SlateGray"
+                    Clicked="BtnFlip_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
